@@ -23,26 +23,26 @@ namespace Banco_mySql_WebSistemas
 
             try 
             {
-                #region Query MySlq
                 cmd.Connection = conexao.connection;
-                cmd.CommandText = @"inset into cliente (cli_nome, cli_logradouro, cli_numero
-                                    cli_complemento, cli_bairo, cli_cidade, cli_uf)
-                                    value
-                                   (@nome, @logradouro, @numero, @complemento, @bairo, @cidade, @uf)";
+                cmd.CommandText = @"insert into cliente
+                                (cli_nome, cli_logradouro, cli_cidade, cli_numero, cli_complemento, cli_bairro, cli_uf)
+                                 values 
+                                 (@nome, @logradouro, @cidade, @numero, @complemento, @bairo, @uf)";
 
-                #endregion
 
-                cmd.Parameters.AddWithValue("nome", txtNome);
-                cmd.Parameters.AddWithValue("logradouro", txtLogradouro);
-                cmd.Parameters.AddWithValue("numero", txtNumero);
-                cmd.Parameters.AddWithValue("complemento", txtComplemento);
-                cmd.Parameters.AddWithValue("cidade", txtCidade);
-                cmd.Parameters.AddWithValue("uf", txtUf);
+
+                cmd.Parameters.AddWithValue("nome", txtNome.Text);
+                cmd.Parameters.AddWithValue("logradouro", txtLogradouro.Text);
+                cmd.Parameters.AddWithValue("cidade", txtCidade.Text);
+                cmd.Parameters.AddWithValue("numero", txtNumero.Text);
+                cmd.Parameters.AddWithValue("complemento", txtComplemento.Text);
+                cmd.Parameters.AddWithValue("bairo", txtBairro.Text);
+                cmd.Parameters.AddWithValue("uf", txtUf.Text);
 
                 conexao.Conectar();
 
                 cmd.ExecuteNonQuery();
-                lblResultado.Text = "Cadastrado";
+                lblResultado.Text = "Adicionado";
             }
             catch (Exception ex)
             {

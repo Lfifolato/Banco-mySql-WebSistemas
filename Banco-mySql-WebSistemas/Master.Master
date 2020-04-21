@@ -38,7 +38,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="testeBD.aspx">Teste DB</a>
                             <a class="dropdown-item" href="#">Listar DB</a>
-                            <a class="dropdown-item" href="#">Inserir DB</a>
+                            <a class="dropdown-item" href="inserirUser.aspx">Inserir DB</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Delete DB</a>
                         </div>
