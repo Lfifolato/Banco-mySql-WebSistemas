@@ -19,6 +19,8 @@
                 </asp:RequiredFieldValidator>
                 <asp:TextBox ID="txtNome" runat="server" MaxLength="100" CssClass="form-control  border border-primary"></asp:TextBox>
             </div>
+
+
         </div>
 
         <div class="row" style="margin-top: 15px">
@@ -90,5 +92,7 @@
         </div>
 
     </div>
+
+
 
 </asp:Content>
