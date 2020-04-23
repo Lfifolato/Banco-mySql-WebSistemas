@@ -33,6 +33,24 @@ namespace Banco_mySql_WebSistemas
         protected global::System.Web.UI.WebControls.TextBox txtNome;
 
         /// <summary>
+        /// Controle rfvSexo.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvSexo;
+
+        /// <summary>
+        /// Controle txtSexo.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList txtSexo;
+
+        /// <summary>
         /// Controle rfvLogradouro.
         /// </summary>
         /// <remarks>

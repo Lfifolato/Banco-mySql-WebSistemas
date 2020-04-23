@@ -11,13 +11,27 @@
 
         <div class="row" style="margin-top: 15px">
 
-            <div class="col-md-12">
+            <div class="col-md-10">
 
                 <label>Nome :</label>
                 <asp:RequiredFieldValidator ID="rfvNome" ControlToValidate="txtNome"
                     ErrorMessage="*" ForeColor="Red" runat="server">
                 </asp:RequiredFieldValidator>
                 <asp:TextBox ID="txtNome" runat="server" MaxLength="100" CssClass="form-control  border border-primary"></asp:TextBox>
+            </div>
+
+
+            <div class="col-md-2">
+
+                <label>Sexo :</label>
+                <asp:RequiredFieldValidator ID="rfvSexo" ControlToValidate="txtSexo"
+                    ErrorMessage="*" ForeColor="Red" runat="server">
+                </asp:RequiredFieldValidator>
+                <asp:DropDownList ID="txtSexo" runat="server" CssClass="dropdown-item-text">
+                    <asp:ListItem Selected="True" Value="Homen">Homen</asp:ListItem>
+                    <asp:ListItem Value="Mulher">Mulher</asp:ListItem>
+                    <asp:ListItem Value="Outros">Outros</asp:ListItem>
+                </asp:DropDownList>
             </div>
 
 

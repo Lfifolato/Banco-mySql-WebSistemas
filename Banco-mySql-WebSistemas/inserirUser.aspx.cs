@@ -25,13 +25,14 @@ namespace Banco_mySql_WebSistemas
             {
                 cmd.Connection = conexao.connection;
                 cmd.CommandText = @"insert into cliente
-                                (cli_nome, cli_logradouro, cli_cidade, cli_numero, cli_complemento, cli_bairro, cli_uf)
+                                (cli_nome, cli_sexo, cli_logradouro, cli_cidade, cli_numero, cli_complemento, cli_bairro, cli_uf)
                                  values 
-                                 (@nome, @logradouro, @cidade, @numero, @complemento, @bairo, @uf)";
+                                 (@nome, @sexo, @logradouro, @cidade, @numero, @complemento, @bairo, @uf)";
 
 
 
                 cmd.Parameters.AddWithValue("nome", txtNome.Text);
+                cmd.Parameters.AddWithValue("sexo", txtSexo.SelectedItem.Value);
                 cmd.Parameters.AddWithValue("logradouro", txtLogradouro.Text);
                 cmd.Parameters.AddWithValue("cidade", txtCidade.Text);
                 cmd.Parameters.AddWithValue("numero", txtNumero.Text);
