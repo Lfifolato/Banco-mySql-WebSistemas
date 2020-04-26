@@ -29,7 +29,7 @@
                     ErrorMessage="*" ForeColor="Red" runat="server">
                 </asp:RequiredFieldValidator>
                 <asp:DropDownList ID="txtSexo" runat="server" CssClass="dropdown-item-text">
-                    <asp:ListItem Selected="True" Value="Homen">Homen</asp:ListItem>
+                    <asp:ListItem Selected="True" Value="Homem">Homem</asp:ListItem>
                     <asp:ListItem Value="Mulher">Mulher</asp:ListItem>
                     <asp:ListItem Value="Outros">Outros</asp:ListItem>
                 </asp:DropDownList>
